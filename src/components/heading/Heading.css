@@ -1,0 +1,40 @@
+:root {
+    --primary-color: #384F63;
+}
+
+@font-face {
+    font-family: "Butler-Regular";
+    src: url("../../assets/fonts/Butler_Regular.woff");
+}
+
+.heading {
+    font-family: Butler-Regular, sans-serif;
+    color: var(--primary-color);
+    font-size: 100px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 0.7em;
+}
+
+@media (max-width: 1440px) {
+    .heading {
+        font-size: 80px;
+    }
+}
+@media (max-width: 1024px) {
+    .heading {
+        font-size: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .heading {
+        font-size: 60px;
+    }
+}
+@media (max-width: 600px) {
+    .heading {
+        font-size: 50px;
+        margin-top: 16vh;
+    }
+}

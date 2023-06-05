@@ -1,0 +1,70 @@
+
+:root{
+    --secondary-color: #17AC9D;
+}
+
+@font-face{
+    font-family: Gilroy-Bold;
+    src: url("../../../assets/fonts/Gilroy-Bold.woff");
+}
+
+@font-face {
+    font-family: "Rockness-Regular";
+    src: url("../../../assets/fonts/Rockness.woff");
+}
+
+.products__heading {
+    width: 60vw;
+    position: relative;
+    font-family: Gilroy-Bold, sans-serif;
+    color: var(--tertiary-color);
+    font-weight: normal;
+    font-size: 46px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.products__heading div {
+    position: absolute;
+    width: 40vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: Rockness-Regular, sans-serif;
+    color: var(--secondary-color);
+    font-size: 65px;
+}
+
+@media (max-width: 1440px) {
+    .products__heading {
+        font-size: 42px;
+    }
+    .products__heading div {
+        font-size: 55px;
+    }
+}
+@media (max-width: 1024px) {
+    .products__heading {
+        font-size: 36px;
+    }
+    .products__heading div {
+        font-size: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .products__heading {
+        font-size: 34px;
+    }
+    .products__heading div {
+        font-size: 45px;
+    }
+}
+@media (max-width: 600px) {
+    .products__heading {
+        font-size: 30px;
+    }
+    .products__heading div {
+        font-size: 40px;
+    }
+}

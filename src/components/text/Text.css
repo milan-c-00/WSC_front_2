@@ -1,0 +1,44 @@
+:root {
+    --tertiary-color: #283E51;
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("../../assets/fonts/Gilroy-Regular.woff");
+}
+
+.services__text {
+    width: 42vw;
+    color: var(--tertiary-color);
+    font-family: Gilroy-Regular, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 80%;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+@media (max-width: 1440px) {
+    .services__text {
+        font-size: 19px;
+        width: 46vw;
+    }
+}
+@media (max-width: 1024px) {
+    .services__text {
+        font-size: 18px;
+        width: 50vw;
+    }
+}
+@media (max-width: 768px) {
+    .services__text {
+        font-size: 16px;
+        width: 54vw;
+    }
+}
+@media (max-width: 600px) {
+    .services__text {
+        font-size: 14px;
+        width: 58vw;
+    }
+}

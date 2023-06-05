@@ -1,0 +1,10 @@
+
+.products__container {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 9rem;
+}

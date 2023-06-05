@@ -1,0 +1,55 @@
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20vw;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 0 50px #67859E26;
+}
+
+.interest__image {
+    width: 82%;
+    height: auto;
+    margin: 2rem;
+}
+
+.interest__heading {
+    font-family: Gilroy-Bold, sans-serif;
+    font-size: 36px;
+    color: var(--tertiary-color);
+    text-align: center;
+    max-width: 82%;
+    margin-bottom: 1em;
+}
+
+
+@media (max-width: 1440px) {
+    .interest__heading {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1024px) {
+    .interest__heading {
+        font-size: 26px;
+    }
+    .interest {
+        width: 24vw;
+    }
+}
+@media (max-width: 768px) {
+    .interest__heading {
+        font-size: 22px;
+    }
+    .interest {
+        width: 60vw;
+        margin: 1em;
+    }
+}
+@media (max-width: 600px) {
+    .interest__heading {
+        font-size: 18px;
+    }
+}
