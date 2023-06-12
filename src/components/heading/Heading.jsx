@@ -1,5 +1,4 @@
-import React from "react";
-import "./Heading.css"
+import "./Heading.scss"
 
 const Heading = () => {
 

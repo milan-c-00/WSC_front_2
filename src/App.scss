@@ -1,0 +1,40 @@
+$primary-color: #384F63;
+$secondary-color: #17AC9D;
+$tertiary-color: #283E51;
+$back_white: #ffffff;
+$link-color: #67859E;
+$box-color: #f5f5f5;
+$lgray : #E6E6E6;
+
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("src/assets/fonts/Gilroy-Medium.woff");
+}
+@font-face {
+    font-family: "Butler-Regular";
+    src: url("src/assets/fonts/Butler_Regular.woff");
+}
+@font-face{
+    font-family: Gilroy-Bold;
+    src: url("src/assets/fonts/Gilroy-Bold.woff");
+}
+@font-face {
+    font-family: "Rockness-Regular";
+    src: url("src/assets/fonts/Rockness.woff");
+}
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("src/assets/fonts/Gilroy-Regular.woff");
+}
+@font-face {
+    font-family: "Butler-Light";
+    src: url("src/assets/fonts/Butler_Light.woff");
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

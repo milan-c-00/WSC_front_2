@@ -1,15 +1,9 @@
-:root {
-    --tertiary-color: #283E51;
-}
 
-@font-face {
-    font-family: "Gilroy-Regular";
-    src: url("../../assets/fonts/Gilroy-Regular.woff");
-}
+@use "src/App";
 
 .services__text {
     width: 42vw;
-    color: var(--tertiary-color);
+    color: App.$tertiary-color;
     font-family: Gilroy-Regular, sans-serif;
     font-size: 20px;
     font-weight: normal;

@@ -1,4 +1,6 @@
 
+@use "src/App";
+
 .interest {
     display: flex;
     flex-direction: column;
@@ -8,21 +10,22 @@
     background-color: white;
     border-radius: 24px;
     box-shadow: 0 0 50px #67859E26;
-}
 
-.interest__image {
-    width: 82%;
-    height: auto;
-    margin: 2rem;
-}
+    &__image {
+        width: 82%;
+        height: auto;
+        margin: 2rem;
+    }
 
-.interest__heading {
-    font-family: Gilroy-Bold, sans-serif;
-    font-size: 36px;
-    color: var(--tertiary-color);
-    text-align: center;
-    max-width: 82%;
-    margin-bottom: 1em;
+    &__heading {
+        font-family: Gilroy-Bold, sans-serif;
+        font-size: 36px;
+        color: App.$tertiary-color;
+        text-align: center;
+        max-width: 82%;
+        margin-bottom: 1em;
+    }
+
 }
 
 

@@ -1,10 +1,9 @@
-import React from "react";
 import facebook from "../../../assets/img/facebook_white.svg"
 import behance from "../../../assets/img/behance_white.svg"
 import instagram from "../../../assets/img/instagram_white.svg"
 import linkedIn from "../../../assets/img/linkedin_white.svg"
 import twitter from "../../../assets/img/twitter_white.svg"
-import "./Socials.css"
+import "./Socials.scss"
 
 const Socials = () => {
 

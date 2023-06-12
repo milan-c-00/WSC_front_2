@@ -1,6 +1,5 @@
-import React from "react";
 import paperPlane from "../../../assets/img/logo_text/Group 420@2x.png"
-import "./Contact.css"
+import "./Contact.scss"
 
 const Contact = () => {
 

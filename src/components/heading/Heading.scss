@@ -1,15 +1,9 @@
-:root {
-    --primary-color: #384F63;
-}
 
-@font-face {
-    font-family: "Butler-Regular";
-    src: url("../../assets/fonts/Butler_Regular.woff");
-}
+@use '../../App';
 
 .heading {
     font-family: Butler-Regular, sans-serif;
-    color: var(--primary-color);
+    color: App.$primary-color;
     font-size: 100px;
     font-weight: normal;
     text-align: center;

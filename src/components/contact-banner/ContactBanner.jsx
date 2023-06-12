@@ -1,5 +1,4 @@
-import React from "react";
-import "./ContactBanner.css"
+import "./ContactBanner.scss"
 import parrotImage from "../../assets/img/parrot/parrot_2.png"
 
 const ContactBanner = () => {

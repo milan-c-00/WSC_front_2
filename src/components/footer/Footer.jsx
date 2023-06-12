@@ -1,5 +1,4 @@
-import React from "react";
-import "./Footer.css"
+import "./Footer.scss"
 import map from "../../assets/img/map/map_2.png"
 import Contact from "./contact/Contact.jsx";
 import Tooltip from "./tooltip/Tooltip.jsx";
@@ -10,12 +9,12 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <Tooltip></Tooltip>
+            <Tooltip/>
             <img src={map} alt="World map" className="footer__img"/>
             <div className="container-50">
-                <Contact></Contact>
-                <Info></Info>
-                <Socials></Socials>
+                <Contact/>
+                <Info/>
+                <Socials/>
             </div>
         </div>
     )

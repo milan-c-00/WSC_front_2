@@ -1,39 +1,27 @@
 
-:root{
-    --secondary-color: #17AC9D;
-}
+@use "src/App";
 
-@font-face{
-    font-family: Gilroy-Bold;
-    src: url("../../../assets/fonts/Gilroy-Bold.woff");
-}
-
-@font-face {
-    font-family: "Rockness-Regular";
-    src: url("../../../assets/fonts/Rockness.woff");
-}
-
-.products__heading {
+.heading {
     width: 60vw;
     position: relative;
     font-family: Gilroy-Bold, sans-serif;
-    color: var(--tertiary-color);
+    color: App.$tertiary-color;
     font-weight: normal;
     font-size: 46px;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 3em;
-}
 
-.products__heading div {
-    position: absolute;
-    width: 40vw;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%);
-    font-family: Rockness-Regular, sans-serif;
-    color: var(--secondary-color);
-    font-size: 65px;
+    div {
+        position: absolute;
+        width: 40vw;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        font-family: Rockness-Regular, sans-serif;
+        color: App.$secondary-color;
+        font-size: 65px;
+    }
 }
 
 @media (max-width: 1440px) {

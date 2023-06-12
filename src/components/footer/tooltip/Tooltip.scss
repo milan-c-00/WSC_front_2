@@ -1,8 +1,10 @@
 
+@use "src/App";
+
 .green-dot {
     width: 12px;
     height: 12px;
-    background-color: var(--secondary-color);
+    background-color: App.$secondary-color;
     border-radius: 50%;
     position: absolute;
     top: 35.6%;
@@ -19,8 +21,6 @@
     z-index: 1;
     border-radius: 10px;
     position: absolute;
-    /*top: 27%;*/
-    /*left: 37%;*/
     top: 35.6%;
     left: 49.2%;
     transform: translate(-50%, -120%);
@@ -30,20 +30,19 @@
 .white-box::after {
     content: '';
     position: absolute;
-    /*bottom: -50%;*/
     top: 90%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 20px;
     border-style: solid;
-    border-color: #f1f1f1 transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
 }
 
 .footer__text-dark {
     font-family: Gilroy-Regular, sans-serif;
     font-weight: normal;
     font-size: 22px;
-    color: var(--tertiary-color);
+    color: App.$tertiary-color;
     padding: 0.8em;
     opacity: 80%;
 }

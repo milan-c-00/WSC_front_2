@@ -1,6 +1,5 @@
-import React from "react";
 import illustration_1_2 from "../../assets/img/ilustrations/ilustration_1_2.png"
-import "./Illustration.css"
+import "./Illustration.scss"
 
 const Illustration = () => {
 

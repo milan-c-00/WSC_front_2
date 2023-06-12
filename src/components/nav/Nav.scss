@@ -1,0 +1,176 @@
+
+@use "src/App";
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        margin-left: 7.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__logo__img {
+        height: 32px;
+        aspect-ratio: 1;
+        display: block;
+        margin-top: 2em;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /*align-items: center;*/
+        list-style: none;
+    }
+
+    &__link {
+        display: block;
+        font-family: Gilroy-Medium, sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+        color: App.$link-color;
+        margin-top: 3em;
+        margin-left: 3em;
+
+        &-active {
+            padding-bottom: 1rem;
+            border-bottom: 4px solid App.$secondary-color;
+        }
+
+        &__lang {
+            font-size: 1rem;
+            padding: 0.5em;
+            border: 2px solid App.$link-color;
+            align-self: center;
+            margin-right: 8vw;
+            margin-left: 7vw;
+        }
+
+        &-white {
+            color: white;
+        }
+
+    }
+
+}
+
+.menu {
+    display: none;
+
+    &-btn {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1919px) {
+    .nav__link {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1440px) {
+    .nav__link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav__link {
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .nav__links {
+        flex-wrap: wrap;
+    }
+    .nav__link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav__logo__img {
+        margin-top: 1em;
+    }
+
+    .nav {
+        width: 99.9vw;
+        height: 8vh;
+        background-color: white;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        align-self: flex-end;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin-bottom: 5px;
+        }
+
+    }
+
+    .menu {
+        display: none;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li a {
+            text-decoration: none;
+            color: #333;
+        }
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: block;
+        position: fixed;
+        top: 8vh;
+        left: 0;
+        background-color: white;
+        z-index: 1;
+        width: 100vw;
+        /*border: 1px solid var(--tertiary-color);*/
+    }
+
+    .menu .nav__link {
+        padding: 1em;
+        margin: 0;
+    }
+
+    .menu .nav__link:hover {
+        background-color: App.$secondary-color;
+        opacity: 80%;
+    }
+
+    .menu .nav__link:active {
+        background-color: App.$secondary-color;
+    }
+
+    .menu .nav__link-active {
+        background-color: App.$secondary-color;
+    }
+
+    .menu .nav__link__lang {
+        border: none;
+    }
+
+}
+

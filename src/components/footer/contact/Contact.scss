@@ -1,28 +1,29 @@
+.contact {
+    &__text-small {
+        width: auto;
+        font-family: Gilroy-Regular, sans-serif;
+        font-size: 26px;
+        color: white;
+        font-weight: normal;
+        text-align: center;
+        margin: 1em 0 1em 0;
+        line-height: 1.5;
+    }
 
-.contact__text-small {
-    width: auto;
-    font-family: Gilroy-Regular, sans-serif;
-    font-size: 26px;
-    color: white;
-    font-weight: normal;
-    text-align: center;
-    margin: 1em 0 1em 0;
-    line-height: 1.5;
-}
+    &__text-big {
+        width: auto;
+        font-family: Gilroy-Bold, sans-serif;
+        font-size: 32px;
+        color: white;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
 
-.contact__text-big {
-    width: auto;
-    font-family: Gilroy-Bold, sans-serif;
-    font-size: 32px;
-    color: white;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.contact__text-link {
-    text-decoration: none;
-    color: white;
+    &__text-link {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .paper-plane {

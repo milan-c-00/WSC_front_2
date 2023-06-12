@@ -1,5 +1,4 @@
-import React from "react";
-import "./Tooltip.css"
+import "./Tooltip.scss"
 import logoRound from "../../../assets/img/logo_round/logo_round_2.png"
 
 const Tooltip = () => {

@@ -1,8 +1,10 @@
 
-.interests__heading {
+@use "src/App";
+
+.heading {
     font-family: Butler-Light, sans-serif;
     font-size: 72px;
-    color: var(--tertiary-color);
+    color: App.$tertiary-color;
     text-align: center;
     margin-top: 1.6em;
     margin-bottom: 1em;
@@ -17,12 +19,12 @@
 }
 
 @media (max-width: 1440px) {
-    .interests__heading {
+    .heading {
         font-size: 62px;
     }
 }
 @media (max-width: 1024px) {
-    .interests__heading {
+    .heading {
         font-size: 54px;
     }
     .interests__container {
@@ -30,7 +32,7 @@
     }
 }
 @media (max-width: 768px) {
-    .interests__heading {
+    .heading {
         font-size: 46px;
     }
     .interests__container {
@@ -40,7 +42,7 @@
     }
 }
 @media (max-width: 600px) {
-    .interests__heading {
+    .heading {
         font-size: 38px;
     }
 }
